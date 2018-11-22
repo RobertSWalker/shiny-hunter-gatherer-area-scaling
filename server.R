@@ -3,7 +3,7 @@ library(shiny)
 library(dplyr)
 library(cowplot)
 
-df <- read.csv("C:/users/walkerro/Desktop/R scripts/class/hgs.csv", header = TRUE)
+df <- read.csv("hgs.csv", header = TRUE)
 df <- df %>% dplyr::select("X","latitude","longitude","tlpop","area")
 model <- lm( log(area) ~ log(tlpop) + abs(latitude), data = df)
 
