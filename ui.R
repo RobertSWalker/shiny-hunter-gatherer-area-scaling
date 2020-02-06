@@ -2,6 +2,8 @@
 # run the application by clicking 'Run App' above.
 
 library(shiny)
+library(dplyr)
+library(ggplot2)
 
 # Define UI for application
 shinyUI(fluidPage(
