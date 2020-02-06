@@ -1,7 +1,7 @@
 # This is the server logic of a Shiny web application. You can run the application by clicking 'Run App' above.
 library(shiny)
 library(dplyr)
-library(cowplot)
+library(ggplot2)
 
 df <- read.csv("hgs.csv", header = TRUE)
 df <- df %>% dplyr::select("X","latitude","longitude","tlpop","area")
